@@ -1,0 +1,13 @@
+vertices: generic type
+
+classes:
+Graph -- no arguments
+
+methods:
+
+add_vertices() -- add new vertices
+add_edges() -- add new edges
+get_connections() -- get the list of vertices that are connected
+to a given vertex
+
+directed graph -- similar to linked list?
