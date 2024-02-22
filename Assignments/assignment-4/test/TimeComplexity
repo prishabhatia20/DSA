@@ -1,0 +1,47 @@
+Master Theorem Work: https://docs.google.com/document/d/1YqrLrLohtCzBhkVTb0fygP7w3a5nE7UYM9ubdC59HwM/edit?usp=sharing
+
+The algorithms I implemented were Bubble Sort, Insertion Sort, Heap Sort,
+and Selection Sort.
+
+The time complexity of selection sort, bubble sort, and insertion sort is O(n^2). A table with the list size
+corresponding to the number of operations is below:
+
+N       |   Time Complexity
+10          100 operations
+100         10000 operations
+1000        1000000 operations
+
+The complexity exponentially increases as the list size increases, showing that these algorithms very
+quickly becomes inefficient for sorting very large list sizes. This is because each algorithm has two
+loops, which means that in the first loop, the list is iterated through n times, and in the second loop,
+the list is also iterated through n times. As shown above, this is fine for smaller lists, but takes a
+lot of time and operations for large lists.
+
+
+The time complexity of heap sort is O(nlog(n)). A table with the list size corresponding to the number
+of operations is below:
+
+N       |   Time Complexity
+10          10 operations
+100         200 operations
+1000        3000 operations
+10000       40000 operations
+100000      500000 operations
+200000      1060205 operations
+1000000     6000000 operations
+
+
+A clear pattern emerges, as well as a clear sign of the efficiency of heap sort. We can see that heap sort can sort a
+list of 200,000 elements in about the same time as it takes any of the other three algorithms to sort a list of
+1,000 elements. When solving problems with small list sizes, picking an algorithm doesn't make a noticeable difference.
+However, when solving large scale problems, being aware of the time complexity of algorithms like this would save a lot
+of time and a lot of computational power.
+
+
+
+
+
+
+
+
+

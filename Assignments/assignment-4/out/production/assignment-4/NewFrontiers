@@ -1,0 +1,71 @@
+Paper Link: https://dl.acm.org/doi/10.1145/3488371
+
+In the paper "Towards Developing Uniform Lexicon
+Based Sorting Algorithm for Three Prominent Indo-Aryan
+Languages", by Mir Ragic Ishraq et al., the authors
+explore linguistic similarities among Indic languages,
+specifically, Bengali, Nepali, and Hindi. Rather than
+develop separate computational tools for each language, the
+paper advocates for a uniform solution to increase productivity
+and save time. This solution is a sorting algorithm that
+maintains the linguistic rules of each language while facilitating
+common research in NLP. This algorithm involves a normalization
+process that allows the languages to obtain a regular form
+for all sorting. Then, a combined map chart is developed where
+map values are assigned to each character maintaining the
+standard collation sequence of the languages. The authors
+first started with developing the algorithm on Bengali and
+Nepali, and then added Hindi in after.
+
+The Bengali language follows Bengali Unicode, and Nepali
+and Hindi follow Devanagari Unicode. Bengali has a different
+script than Hindi and Nepali. These languages have
+originated from the same language family. The objective
+of their research was to see whether they can execute the
+same principle on two languages with two different scripts.
+The authors created a list of problems that should be addressed
+by their algorithm. They include, but are not limited to,
+the Unicode of Bengali characters not aligning with the
+standards of Bangla Academy, a standard that Bengali words
+need to be sorted according to, some modifiers being able
+to be written in two ways, and foreign characters that
+prevent the formation of compound characters.
+
+The process for sorting Bengali and Nepali words is outlined
+in the methods section. A breakdown of that section is below:
+
+Normalization (Section 5.1): Before sorting, the text standardizes
+the words by handling alternate forms of characters, particularly
+focusing on the use of "Nukta" (a modifier) and skipping trivial characters like hyphens.
+
+Inclusion of Null Modifier (Section 5.2): To ensure accurate sorting, the text introduces
+the concept of a "Null Modifier" to maintain consistency in comparing characters
+and modifiers within words.
+
+Mapping Sequence (Section 5.3): The text establishes a mapping sequence
+for Bengali and Nepali characters to maintain the correct dictionary order during sorting.
+
+Proposed Solution (Section 5.4): Words are converted into a mapped character
+array based on the mapping sequence, and then compared character by character
+to determine their order.
+
+Algorithm (Section 5.5): The text describes the implementation of the sorting
+algorithm, utilizing Merge Sort and a COMPARE method to compare characters
+and modifiers effectively.
+
+Result using Algorithm (Section 5.6): The algorithm is optimized for speed and
+accuracy, with complexity explained. Sorting results for Bengali and Nepali
+words are presented, demonstrating adherence to dictionary rules and official sequences.
+
+
+This paper validates the hypothesis of developing a common algorithm for Bengali,
+Nepali, and Hindi by demonstrating their linguistic similarities and developing an
+efficient sorting algorithm that maintains accuracy over a large dataset. The success of this
+approach suggests its potential extension to other Indic languages and opens avenues for
+further research in natural language processing, with collaboration among language experts
+being crucial for validation and advancement.
+
+
+
+
+
