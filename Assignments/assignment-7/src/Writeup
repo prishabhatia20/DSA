@@ -1,0 +1,9 @@
+For the application of the associative array, I implemented a Markov model. I tested it on Edgar Allen Poe's short
+story, "Tell Tale Heart", and I found that it worked! One thing that I found odd was that the order of the key-value
+pairs in the associative array is not the order that they appear in the story. I think this is because of how the hash
+function is implemented, but I think it's something I would fix in the future because it's not intuitive and it would
+be nicer to see the words in the order that they appear. I thought it was cool to see the associative array be used in
+a different problem rather than just implementing the data structure. I also think with more time (this one is on me),
+I would optimize the way the model parses through the text. It currently iterates through every word, which is fine with
+the text I'm using because it's so small. However, with bigger texts, it would take a lot of time to go through every
+word, and I'm sure there's a better and more optimal way to go about doing that.
